@@ -1,0 +1,55 @@
+body {
+    background-color: white;
+    font-family: sans-serif, Arial, Helvetica;
+    margin: 10px;
+}
+
+h1 {
+    text-align: center;
+    letter-spacing: 10px;
+    font-size: 300%;
+}
+
+h2 {
+    text-align: left;
+    font-family: 'Arial Black', Gadget, sans-serif;
+    color: aliceblue;
+    background-color: grey;
+    font-size: 200%;
+    margin: 20px;
+    padding: 5px;
+
+}
+
+p {
+   
+    margin: 0% 10%;
+    text-indent: 50px;
+}
+
+em {
+    font-weight: bold;
+    color: red;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+strong {
+    font-weight: bold;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: white;
+}
+
+
+.imagenhd {
+    float: left;
+    margin: 0 10px 10px 0;
+    width: 106px;
+    height: 150px;
+    
+}
+
+section {
+    clear: both;
+}

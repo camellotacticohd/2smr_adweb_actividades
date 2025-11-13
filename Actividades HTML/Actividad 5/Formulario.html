@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 5 formularios</title>
+    <style>
+        /*Comentarios*/
+        h1 {
+            color: rgb(119, 56, 5);
+            font-family: Georgia, 'Times New Roman', Times, serif;
+
+        }
+
+        label {
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(37, 5, 5);
+        }
+
+        .cabecera {
+            color: blue;
+            font-size: 17px;
+        }
+
+        #username {
+            background-color: maroon;
+            border: 0px;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 10px;
+        }
+        li {
+            background-color: white;
+            float: left;
+            margin-bottom: 5px;
+        }
+
+        main {
+            clear: both;
+        }
+    </style>
+</head>
+
+<body style="background-color: rgb(241, 235, 208);">
+
+    <header>
+
+        <h1>Actividad 5- Formulario HTML</h1>
+        
+    <nav>
+            <ul>enlace1</ul>
+            <ul>enlace2</ul>
+            <ul>enlace3</ul>
+            <ul>enlace4</ul>
+            <ul>enlace5</ul>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section>
+
+            <h2>Controles de Formulario</h2>
+
+            <form action="" method="post">
+                <fieldset>
+
+                    <legend>Datos Personales</legend>
+                    <label for="username" class="cabecera">Nombre</label>
+                    <input type="text" name="username" id="username" autofocus required />
+
+                    <br>
+                    <br>
+
+                    <label for="username">Correo Electronico</label>
+                    <input type="email" name="email" id="email" autofocus required />
+
+                    <br>
+                    <br>
+
+                    <label for="username">URL</label>
+                    <input type="url" name="url" id="url" autofocus required />
+
+                    <br>
+
+                    <br>
+                    <label for="ciudad">Ciudad</label>
+                    <select name="ciudad" id="Ciudad">
+                        <option value="Madrid">Madrid</option>
+                        <option value="Barcelona">Barcelona</option>
+                        <option value="Valencia">Valencia</option>
+                        <option value="Sevilla">Sevilla</option>
+                        <option value="Bilbao">Bilbao</option>
+                        <option value="Zaragoza">Zaragoza</option>
+                        <option value="Malaga">Malaga</option>
+                    </select>
+
+                    <datalist id="ciudades2">
+
+                        <option value="Madrid">Madrid</option>
+                        <option value="Barcelona">Barcelona</option>
+                        <option value="Valencia">Valencia</option>
+                        <option value="Sevilla">Sevilla</option>
+                        <option value="Bilbao">Bilbao</option>
+                        <option value="Zaragoza">Zaragoza</option>
+                        <option value="Malaga">Malaga</option>
+
+                    </datalist>
+
+                    <br>
+                    <br>
+
+                    <label for="ciudadlista">Elige ciudad</label autofocus>
+                    <input type="list" id="ciudadlista" name="ciudadlista" list="ciudades2" />
+                </fieldset>
+                <br>
+                <br>
+                <fieldset>
+
+                    <legend>Otros Datos</legend>
+                    <label for="fecha">Fecha y hora</label>
+                    <input type="datetime" name="fecha" id="fecha" />
+                    <br>
+                    <br>
+                    <label for="hora">Hora</label>
+                    <input type="time" name="hora" id="hora" />
+                    <br>
+                    <br>
+                    <label for="mes">Mes</label>
+                    <input type="month" name="mes" id="mes" />
+                    <br>
+                    <br>
+                    <label for="semana">Semana</label>
+                    <input type="week" name="semana" id="semana" />
+
+                    <br>
+                    <br>
+                    <label for"maxmin">Min 10 - Máx 10</label>
+                    <input type="number" name="maxmin" id="maxmin" min="10" max="10" />
+                    <br>
+                    <br>
+                    <label for="telefono">Telefono</label>
+                    <input type="tel" name="telefono" id="telefono" />
+                    <br>
+                    <br>
+
+                    <br>
+                    <br>
+                    <label for="color">Color</label>
+                    <input type="color" name="color" id="color" />
+                </fieldset>
+                <br>
+                <input type="submit" value="Enviar Datos" />
+
+                <fieldset>
+                    <legend>Otros Controles</legend>
+                    <label for="aficiones">Aficiones</label>
+                    <input type="checkbox" name="cine" id="cine" checked><label for="cine">Cine</label>
+                    <input type="checkbox" name="deporte" id="deporte"><label for="deporte">Deporte</label>
+                    <br>
+                    <br>
+                    <span>
+                        <p>Formas de pago</p>
+                    </span>
+                    <input type="radio" name="pago" id="visa">
+                    <label for="visa">Visa</label>
+                    <input type="radio" name="pago" id="mastercard">
+                    <label for="mastercard">Mastercard</label>
+                    <input type="radio" name="pago" id="aexpress">
+                    <label for="aexpress">American Express</label>
+                </fieldset>
+                <br>
+                <input type="submit">
+            </form>
+
+
+
+            <form action=""></form>
+
+        </section>
+
+    </main>
+
+    <aside>
+
+
+    </aside>
+
+    <footer>
+
+        <small>Copyright &copy</small>
+
+    </footer>
+</body>
+
+</html>
