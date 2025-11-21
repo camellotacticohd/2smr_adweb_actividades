@@ -1,9 +1,20 @@
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1,4;
+:root {
+    --primary-color: #4e8cff;
+    --secondary-color: #07689666;
+    --boton_activo: #0047ab;
+    --color-fondo_caja: #bae5f8;
+    --color-borde_caja: #006699;
+    --secundary-color: #f0fff00;
 }
 
-header, main, footer {
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1, 4;
+}
+
+header,
+main,
+footer {
     max-width: 9900px;
     margin: 0 auto;
 }
@@ -15,14 +26,14 @@ header {
     border-bottom: 8px;
     border-radius: 0 0 4px 4px;
     padding: 1rem 0;
-    box-shadow: 0  0.4rem 0.2rem rgb(4, 25, 145) ;
+    box-shadow: 0 0.4rem 0.2rem rgb(4, 25, 145);
 }
 
 nav a {
     color: white;
     text-decoration: none;
     margin: 0 0.5rem;
-    padding:0.3rem 0.6rem;
+    padding: 0.3rem 0.6rem;
 }
 
 nav a:hover {
@@ -38,6 +49,95 @@ section {
 }
 
 section h2 {
-    color:blue;
+    color: blue;
     margin-bottom: 0.5rem;
+}
+
+/* Pseudoclases */
+.btn,
+.btn-sec {
+    /* border: 2px solid #006699; */
+    border: 2px solid var(--primary-color);
+    border-radius: 4px;
+    background-color: white;
+    padding: 0.4rem 0.8rem;
+    margin: 0.3rem 0.3rem 0.6rem 0;
+    color: var(--primary-color);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn:hover,
+.btn-sec:hover {
+    background-color: var(--primary-color_transparencia);
+    transition: background-color 0.5s;
+}
+
+.btn:activo,
+.btn-sec:active {
+    background-color: var(--boton_activo);
+}
+
+input [type="text"] {
+    border: 1px solid #999;
+    padding: 0.3rem;
+    margin-top: 0.3rem;
+    border-radius: 4px;
+}
+
+input:focus {
+    outline: 1px solid var(--primary-color);
+}
+
+/* Estilos para la lista */
+
+.lista-demo {
+    margin-top: 0, 8rem;
+    padding-left: 1.2rem;
+}
+
+.lista-demo li {
+    margin: 0.2rem 0;
+    opacity: 0, 8;
+    transition: opacity 0.3s;
+}
+
+/* Cambia loa parametros primer elemento de la lista */
+
+/*Los var se usan para llamar a las variables definidas en :root*/
+
+.lista-demo li:first-child {
+
+    font-weight: bold;
+    color: var(--primary-color);
+    opacity: 0.5;
+}
+
+.lista-demo li:hover {
+    opacity: 1;
+}
+
+.caja {
+    background-color: var(--color-fondo_caja);
+    border: 3px solid var(--color-borde_caja);
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+/* span es un hijo directo de #contenedor*/
+
+#contenedor > span {
+
+    display: inline-block;
+    background-color: var(--color-fondo_caja);
+    border: 1px solid var(--color-borde_caja);
+    padding: 0.3rem;
+    margin-bottom: 1rem ;
+}
+
+#contenedor + p {
+    background-color: var(--secundary-color);
+    border: 4px solid green;
+    padding-left: 0.5rem;
 }
