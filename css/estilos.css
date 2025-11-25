@@ -1,0 +1,43 @@
+body {
+    background-color: #dfccb3;
+    margin: 20px;
+    padding: 20px;
+}   
+
+.imagen {
+    margin: 0 200px 0 ;
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+}
+
+h1  {
+    font-family: sans-serif, Arial, Helvetica;
+    text-align: center;
+    color: rgb(85, 26, 26);
+    padding: 0  1px 1px 0
+}
+h2 {
+    font-family: 'Arial Black', Gadget, sans-serif;
+    color: rgb(102, 51, 0);
+    background-color: #f8edd9;
+    text-align: left;
+    padding: 5px;
+    margin: 10px 0 10px 0;
+    border-radius: 10px
+}
+section {
+    background-color: white;
+    clear: both;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+footer {
+    text-align: center;
+    font-size: 80%;
+    margin-top: 20px;
+    padding: 10px;
+    border-top: 1px solid black;
+}
