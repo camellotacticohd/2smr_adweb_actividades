@@ -5,7 +5,8 @@ body {
 }   
 
 .imagen {
-    margin: 0 200px 0 ;
+    display: block; /*Para centrar la imagen*/
+    margin: 0 auto; /*Para centrar la imagen*/
     width: 150px;
     height: auto;
     border-radius: 10px;
@@ -25,19 +26,67 @@ h2 {
     padding: 5px;
     margin: 10px 0 10px 0;
     border-radius: 10px
+    
 }
+
+
+h3 {
+    font-family: 'Arial Black', Gadget, sans-serif;
+    color: rgb(153, 76, 0);
+    background-color: #f8edd9;
+    text-align: left;
+    padding: 5px;
+    margin: 15px;
+    border-radius: 10px;
+    width: 200px;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif; 
+    text-align: justify;
+    line-height: 1.5;
+    margin: 10px;
+    color:  rgb(153, 76, 0);
+    background-color: #f8edd9;
+    border-radius: 10px;
+    padding: 5px;
+
+}   
+
 section {
     background-color: white;
     clear: both;
-    margin-top: 20px;
+    margin: 20px;
     padding: 20px;
     border-radius: 10px;
+    box-shadow:  0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 footer {
     text-align: center;
     font-size: 80%;
     margin-top: 20px;
-    padding: 10px;
-    border-top: 1px solid black;
+    padding: 10px;;
+}
+
+main li{
+    list-style: none ;
+}
+main a {
+    text-decoration: none;
+    border: #dfccb3 3px solid;
+    padding: 5px;
+    border-radius: 10px;
+    color: rgb(153, 76, 0);
+}
+main a:hover {
+    background-color: #f3fdbc;
+    color: black;
+}   
+
+.titulos {
+    text-align: center;
+    width: 100px;
+    margin: 20px auto 10px auto;
+    padding: 5px;
 }
