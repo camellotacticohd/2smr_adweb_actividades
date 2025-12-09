@@ -1,0 +1,135 @@
+:root {
+  --padding-container: 50px 0; /*arriba y abajo 100 px y los lados 0*/
+  --color-nav: #1a212466;
+  --color-enlaces-nav: rgb(255, 255, 255); 
+  --color-letras-titulo-parrafo: rgb(255, 255, 255);
+}
+/*Variables para root*/
+
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+/*reseteo de margenes*/ 
+
+.mi_contenedor {
+
+    height: 90%;
+    max-height: 1200px;
+    overflow: hidden; /*para esconder las cosas que se salgan del nav*/;
+    margin: 0 auto;/*para centarlo verticalmente en le contenedor*/
+    padding: var(--padding-container);
+}
+
+.mi_menu {
+    display: flex;/*para usar las propiedades del flex*/
+    align-items: center;/*para centrarlo verticalmente se usaria el justify content para el horizontal*/
+    flex-direction: row;/*para ponerlo en columnas*/
+    background-color: var(--color-nav);
+    flex-wrap: nowrap;
+    height: 100px;/*altura*/
+    --padding-container: 0;/*eliminamos el padding del menu*/
+}
+
+.logo{
+    flex: 0 1 auto; /* el logo ocupa su espacio natural */
+    max-width: 90px; /* maximo ancho del logo */
+    min-width: 60px;
+    margin-left: 1rem;
+}
+
+/*estilo del nav*/
+.menu_nav {
+    display: flex;
+    flex: 2 1 70%;/* los numero hacen que puedan crecer hasta el doble de su espascio y el porcentaje lo limita a un 70% del espacio*/
+    justify-content: space-evenly;/*distribuye el espacio de forma equitativa*/
+}
+
+/*estilos de los enlaces*/
+.menu_nav a {
+    text-decoration: none;/*le quita la linea al enlace*/
+    color: var(--color-enlaces-nav);
+    font-weight: bold;/*para poner la letra en negrita*/
+}
+
+.menu_social{
+    display: flex;
+    flex: 1 1 auto;/*establece el espacio que encoge, crece y esta inicialmente*/
+    justify-content: space-between;
+}
+ .menu_social a img{
+    width: 32px;
+    min-width: 28%;
+ }
+
+.header_container{
+    height: 75%;
+    display: flex;
+    flex-direction: column; /* los elementos van en columna */
+    justify-content: center; /* centramos verticalmente */
+    color: white;
+    text-align: center;
+    max-width: 800px;
+}
+
+.header_title{
+    font-size: 3rem;
+    padding: 20px 0;
+}
+
+.header_paragraph{
+    font-size: 1.2rem;
+    line-height: 2rem;
+    margin-bottom: 25px;
+}
+
+.cta{
+    display: inline-block;
+    background-color: blue;
+    align-self: center; /* centramos el boton horizontalmente */
+    color: white;
+    padding: 13px 30px;
+    border-radius: 32px;
+}
+
+.mi_contenedor .cta{
+    display: inline-block;/*es como un elemento para hacer bloques pero tambien con texto*/
+    justify-content: center;
+    background-color: blue;
+    color: var(--color-letras-titulo-parrafo);
+    padding: 13px 30px;
+    margin: 0 auto;
+    border-radius: 32px;
+    text-decoration: none;
+    font-weight: bold;
+    
+}
+
+/*fondo*/
+.mi_header::before {
+    /* Fondo para el encabezado */
+    content: ""; /* Crea el elemento de fondo */
+    position: absolute; /* Permite posicionar libremente */
+    top: 0; /* Lo fija arriba */
+    left: 0; /* Lo fija a la izquierda */
+    width: 100%; /* Ocupa todo el ancho */
+    height: 100%; /* Ocupa toda la altura */
+
+    /* Imagen y Degradado */
+    background-image: linear-gradient( /* Aplica un degradado oscuro se hace en la web y se copia el codigo*/
+        180deg,
+        rgba(0, 0, 0, 0.25) 0%, /* para hacerlo semitransparente */
+        rgba(0, 0, 0, 0.5) 100% /* a más opaco */
+    ),
+    url("../img/fondo_header.jpg"); /* carga una imagen detrás */
+    
+    background-size: cover; /* La imagen cubre todo el espacio */
+
+    /* Recorte y Profundidad */
+    clip-path: polygon(100% 0, 100% 85%, 50% 95%, 0 85%, 0 0); /* Recorta el fondo dándole una forma inclinada en la base esto se hace en la web */
+    z-index: -1; /* Lo envía al fondo (detrás del texto y menú) */
+}
+
